@@ -59,7 +59,19 @@ app.get('/fail', (req, res) => {
    });
 });
 
+app.get('/portfolio', (req, res) => {
+   res.render('portfolio.hbs',{
+       pageTitle:'Portfolio Page'
+   });
+});
 
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
 });
+
+
+//projects page
+//new url with template (view)
+//paragraph 'Portfolio page'
+//new link in all pages for portfolio
+//update github and heroku
